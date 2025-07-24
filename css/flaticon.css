@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "FlaticonBusiness";
-  src: url("../fonts/flaticon-business.eot");
-  src: url("../fonts/flaticon-business.eot?#iefix") format("embedded-opentype"),
-       url("../fonts/flaticon-business.woff2") format("woff2"),
-       url("../fonts/flaticon-business.woff") format("woff"),
-       url("../fonts/flaticon-business.ttf") format("truetype"),
-       url("../fonts/flaticon-business.svg#FlaticonBusiness") format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "FlaticonBusiness";
+    src: url("https://cdn.jsdelivr.net/gh/lumisoft/flaticon-business@latest/fonts/flaticon-business.eot");
+    src: url("https://cdn.jsdelivr.net/gh/lumisoft/flaticon-business@latest/fonts/flaticon-business.eot?#iefix") format("embedded-opentype"),
+         url("https://cdn.jsdelivr.net/gh/lumisoft/flaticon-business@latest/fonts/flaticon-business.woff2") format("woff2"),
+         url("https://cdn.jsdelivr.net/gh/lumisoft/flaticon-business@latest/fonts/flaticon-business.woff") format("woff"),
+         url("https://cdn.jsdelivr.net/gh/lumisoft/flaticon-business@latest/fonts/flaticon-business.ttf") format("truetype"),
+         url("https://cdn.jsdelivr.net/gh/lumisoft/flaticon-business@latest/fonts/flaticon-business.svg#FlaticonBusiness") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
