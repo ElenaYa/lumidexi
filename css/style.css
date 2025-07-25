@@ -36,16 +36,13 @@ License: copyright commercial
 29. Clients Section
 30. Main Footer
 **********************************************/
-@import url("../../css2");
+
 @import url("animate.css");
 @import url("owl.css");
 @import url("swiper.min.css");
 @import url("jquery.fancybox.min.css");
 @import url("jquery-ui.css");
-@import url("linear.css");
 @import url("select2.min.css");
-@import url("fontawesome-all.css");
-@import url("flaticon.css");
 @import url("tm-bs-mp.css");
 @import url("tm-utility-classes.css");
 :root {
@@ -11952,11 +11949,6 @@ Section Title
   line-height: 25px;
   position: relative;
 }
-.news-block .content-box .post-info li i {
-  color: var(--theme-color1);
-  font-size: 14px;
-  margin-right: 2px;
-}
 .news-block .content-box .title {
   margin-bottom: 0;
 }
@@ -14326,7 +14318,7 @@ Page Title
 ====================================================================
 
 ***/
-@-webkit-keyframes "ripple" {
+@-webkit-keyframes ripple {
   70% {
     -webkit-box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
     box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
@@ -14336,7 +14328,8 @@ Page Title
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
-@keyframes "ripple" {
+
+@keyframes ripple {
   70% {
     -webkit-box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
     box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
@@ -14346,6 +14339,7 @@ Page Title
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
+
 .page-title {
   position: relative;
   background-repeat: no-repeat;
@@ -14361,7 +14355,7 @@ Page Title
   height: 100%;
   width: 100%;
   background: #131313;
-  opacity: 0.8;
+  opacity: 0.5;
   content: "";
 }
 .page-title .title {
@@ -16379,7 +16373,7 @@ Sidebar
   height: 100%;
   width: 100%;
   background-color: var(--bg-theme-color2);
-  opacity: 0.92;
+  opacity: 0.82;
   content: "";
 }
 
