@@ -1,10 +1,7 @@
 /**
- * Owl Carousel v2.2.0
- * Copyright 2013-2016 David Deutsch
- * Licensed under MIT (https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE)
+
  */
 /**
- * Owl carousel
  * @version 2.1.6
  * @author Bartosz Wojciechowski
  * @author David Deutsch
@@ -18,7 +15,6 @@
 ;(function($, window, document, undefined) {
 
 	/**
-	 * Creates a carousel.
 	 * @class The Owl Carousel.
 	 * @public
 	 * @param {HTMLElement|jQuery} element - The element to create the carousel for.
@@ -27,13 +23,11 @@
 	function Owl(element, options) {
 
 		/**
-		 * Current settings for the carousel.
 		 * @public
 		 */
 		this.settings = null;
 
 		/**
-		 * Current options set by the caller including defaults.
 		 * @public
 		 */
 		this.options = $.extend({}, Owl.Defaults, options);
@@ -45,51 +39,43 @@
 		this.$element = $(element);
 
 		/**
-		 * Proxied event handlers.
 		 * @protected
 		 */
 		this._handlers = {};
 
 		/**
-		 * References to the running plugins of this carousel.
 		 * @protected
 		 */
 		this._plugins = {};
 
 		/**
-		 * Currently suppressed events to prevent them from beeing retriggered.
 		 * @protected
 		 */
 		this._supress = {};
 
 		/**
-		 * Absolute current position.
 		 * @protected
 		 */
 		this._current = null;
 
 		/**
-		 * Animation speed in milliseconds.
 		 * @protected
 		 */
 		this._speed = null;
 
 		/**
-		 * Coordinates of all items in pixel.
 		 * @todo The name of this member is missleading.
 		 * @protected
 		 */
 		this._coordinates = [];
 
 		/**
-		 * Current breakpoint.
 		 * @todo Real media queries would be nice.
 		 * @protected
 		 */
 		this._breakpoint = null;
 
 		/**
-		 * Current width of the plugin element.
 		 */
 		this._width = null;
 
@@ -256,14 +242,11 @@
 	};
 
 	/**
-	 * Contains all registered plugins.
 	 * @public
 	 */
 	Owl.Plugins = {};
 
-	/**
-	 * List of workers involved in the update process.
-	 */
+	
 	Owl.Workers = [ {
 		filter: [ 'width', 'settings' ],
 		run: function() {

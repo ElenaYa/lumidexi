@@ -1,25 +1,14 @@
-// ==================================================
-// fancyBox v3.2.10
-//
-// Licensed GPLv3 for open source use
-// or fancyBox Commercial License for commercial use
-//
-// http://fancyapps.com/fancybox/
-// Copyright 2017 fancyApps
-//
-// ==================================================
+
 ;(function (window, document, $, undefined) {
     'use strict';
 
-    // If there's no jQuery, fancyBox can't work
-    // =========================================
+  
 
     if ( !$ ) {
         return;
     }
 
-    // Check if fancyBox is already initialized
-    // ========================================
+   
 
     if ( $.fn.fancybox ) {
 
@@ -30,8 +19,6 @@
         return;
     }
 
-    // Private default settings
-    // ========================
 
     var defaults = {
 
@@ -56,9 +43,7 @@
         // Should display toolbar (buttons at the top)
         toolbar : true,
 
-        // What buttons should appear in the top right corner.
-        // Buttons will be created using templates from `btnTpl` option
-        // and they will be placed into toolbar (class="fancybox-toolbar"` element)
+       
         buttons : [
             'slideShow',
             'fullScreen',
@@ -72,9 +57,7 @@
         // Detect "idle" time in seconds
         idleTime : 3,
 
-        // Should display buttons at top right corner of the content
-        // If 'auto' - they will be created for content having type 'html', 'inline' or 'ajax'
-        // Use template from `btnTpl.smallBtn` for customization
+       
         smallBtn : 'auto',
 
         // Disable right-click and use simple image protection for images
@@ -4238,15 +4221,6 @@
 
 }( window, document, window.jQuery || jQuery ));
 
-// ==========================================================================
-//
-// SlideShow
-// Enables slideshow functionality
-//
-// Example of usage:
-// $.fancybox.getInstance().SlideShow.start()
-//
-// ==========================================================================
 ;(function (document, $) {
 	'use strict';
 
@@ -4424,12 +4398,6 @@
 
 }( document, window.jQuery || jQuery ));
 
-// ==========================================================================
-//
-// FullScreen
-// Adds fullscreen functionality
-//
-// ==========================================================================
 ;(function (document, $) {
 	'use strict';
 
@@ -4635,12 +4603,6 @@
 
 }( document, window.jQuery || jQuery ));
 
-// ==========================================================================
-//
-// Thumbs
-// Displays thumbnails in a grid
-//
-// ==========================================================================
 ;(function (document, $) {
 	'use strict';
 
@@ -4980,12 +4942,7 @@
 
 }( document, window.jQuery || jQuery ));
 
-// ==========================================================================
-//
-// Hash
-// Enables linking to each modal
-//
-// ==========================================================================
+
 ;(function (document, window, $) {
 	'use strict';
 
@@ -5015,8 +4972,7 @@
 	// Create new history entry only once
 	var shouldCreateHistory = true;
 
-	// Variable containing last hash value set by fancyBox
-	// It will be used to determine if fancyBox needs to close after hash change is detected
+	
     var currentHash = null;
 
 	// Throttling the history change

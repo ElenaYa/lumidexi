@@ -4,22 +4,6 @@ var THEMEMASCOT = {};
 	"use strict";
 
 
-  /* ---------------------------------------------------------------------- */
-  /* --------------------------- Start Demo Switcher  --------------------- */
-  /* ---------------------------------------------------------------------- */
-  // var showSwitcher = true;
-  // var $body = $('body');
-  // var $style_switcher = $('#style-switcher');
-  // if( !$style_switcher.length && showSwitcher ) {
-  //     $.ajax({
-  //         url: "color-switcher/style-switcher.html",
-  //         success: function (data) { $body.append(data); },
-  //         dataType: 'html'
-  //     });
-  // }
-  /* ---------------------------------------------------------------------- */
-  /* ----------------------------- En Demo Switcher  ---------------------- */
-  /* ---------------------------------------------------------------------- */
 	
 
   THEMEMASCOT.isRTL = {
@@ -43,14 +27,12 @@ var THEMEMASCOT = {};
   };
 
 
-	//Hide Loading Box (Preloader)
 	function handlePreloader() {
 		if($('.preloader').length){
 			$('.preloader').delay(200).fadeOut(500);
 		}
 	}
 	
-	//Update Header Style and Scroll to Top
 	function headerStyle() {
 		if($('.main-header').length){
 			var windowpos = $(window).scrollTop();
@@ -1041,3 +1023,46 @@ function setGclidToForms() {
 
 // Запустить обработчик при загрузке страницы
 document.addEventListener('DOMContentLoaded', setGclidToForms);
+
+// Cookie Consent Banner
+function showCookieBanner() {
+    const cookieConsent = localStorage.getItem('cookieConsent');
+    if (!cookieConsent) {
+        const banner = document.createElement('div');
+        banner.className = 'cookie-banner';
+        banner.innerHTML = `
+            <div class="container">
+                <div class="text">
+                    Bu web sitesi, size en iyi deneyimi sunmak için çerezleri kullanmaktadır. Çerez kullanımını kabul etmek için "Kabul Et" butonuna tıklayın.
+                </div>
+                <div class="buttons">
+                    <button class="btn-accept" onclick="acceptCookies()">Kabul Et</button>
+                    <button class="btn-reject" onclick="rejectCookies()">Reddet</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(banner);
+        setTimeout(() => banner.classList.add('show'), 100);
+    }
+}
+
+function acceptCookies() {
+    localStorage.setItem('cookieConsent', 'accepted');
+    hideCookieBanner();
+}
+
+function rejectCookies() {
+    localStorage.setItem('cookieConsent', 'rejected');
+    hideCookieBanner();
+}
+
+function hideCookieBanner() {
+    const banner = document.querySelector('.cookie-banner');
+    if (banner) {
+        banner.classList.remove('show');
+        setTimeout(() => banner.remove(), 500);
+    }
+}
+
+// Показать баннер при загрузке страницы
+document.addEventListener('DOMContentLoaded', showCookieBanner);
