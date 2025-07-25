@@ -335,6 +335,17 @@
 		</div>
 	</section>
 	<!--Emd About Section -->
+		<!-- Call To Action Two -->
+		<section class="call-to-action" style="background-image: url(images/background/2.jpg)">
+			<div class="auto-container">
+				<div class="title-box">
+					
+					<h1 class="title">Büyük zaferleri hatırla — <br>önemli maçları izle!</h1>
+					<a href="history.html" class="theme-btn btn-style-one"><span class="btn-title">Maçları İzle</span></a>
+				</div>
+			</div>
+		</section>
+		<!--End Call To Action Two -->
 
 	<!-- Services Section Four -->
 	<section class="services-section-four">
@@ -436,20 +447,45 @@
 			</div>
 
 			<div class="carousel-outer">
-				<!-- Prject Carousel -->
-				<div class="project-carousel owl-carousel owl-theme">
+				<!-- Project Carousel -->
+				<div class="project-carousel owl-carousel owl-theme" data-options='{
+					"loop": true,
+					"margin": 30,
+					"nav": true,
+					"smartSpeed": 700,
+					"autoplay": true,
+					"autoplayTimeout": 5000,
+					"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+					"responsive": {
+						"0": {
+							"items": 1
+						},
+						"768": {
+							"items": 2
+						},
+						"1024": {
+							"items": 3
+						}
+					},
+					"touchDragEnabled": true,
+					"mouseDragEnabled": true
+				}'>
 					<!-- Project Block -->
 					<div class="project-block">
 						<div class="inner-box">
-							<div class="image-box">
-								<figure class="image"><a href="images/resource/project-1.jpg" class="lightbox-image">
-									<img src="images/resource/project-1.jpg" alt=""></a>
+							<div class="image-box" style="height: 450px;">
+								<figure class="image" style="height: 100%;">
+									<a href="images/resource/team-4.jpg" class="lightbox-image">
+										<img src="images/resource/team-4.jpg" alt="Metin Oktay" style="height: 100%; object-fit: cover;">
+									</a>
 								</figure>
-								<a href="page-project-details.html" class="icon"><i class="fa fa-long-arrow-alt-right"></i></a>
+								<div class="overlay-content">
+									<p>"Taçsız Kral" olarak anılan Metin Oktay, 217 gol ile Galatasaray'ın en golcü futbolcusudur. 11 kez gol kralı olmuştur.</p>
+								</div>
 							</div>
 							<div class="content-box">
-								<h4 class="title"><a href="page-project-details.html">Efsane Oyuncular</a></h4>
-								<span class="cat">OYUNCU PROFİLLERİ</span>
+								<h4 class="title">Metin Oktay</h4>
+								<span class="cat">GALATASARAY EFSANESİ</span>
 							</div>
 						</div>
 					</div>
@@ -457,15 +493,19 @@
 					<!-- Project Block -->
 					<div class="project-block">
 						<div class="inner-box">
-							<div class="image-box">
-								<figure class="image"><a href="images/resource/project-2.jpg" class="lightbox-image">
-									<img src="images/resource/project-2.jpg" alt=""></a>
+							<div class="image-box" style="height: 450px;">
+								<figure class="image" style="height: 100%;">
+									<a href="images/resource/team-2.jpg" class="lightbox-image">
+										<img src="images/resource/team-2.jpg" alt="Lefter Küçükandonyadis" style="height: 100%; object-fit: cover;">
+									</a>
 								</figure>
-								<a href="page-project-details.html" class="icon"><i class="fa fa-long-arrow-alt-right"></i></a>
+								<div class="overlay-content">
+									<p>"Ordinaryüs" lakaplı Lefter, Fenerbahçe formasıyla 423 maçta 423 gol atma başarısı göstermiştir.</p>
+								</div>
 							</div>
 							<div class="content-box">
-								<h4 class="title"><a href="page-project-details.html">Tarihi Maçlar</a></h4>
-								<span class="cat">MAÇ ARŞİVİ</span>
+								<h4 class="title">Lefter Küçükandonyadis</h4>
+								<span class="cat">FENERBAHÇE EFSANESİ</span>
 							</div>
 						</div>
 					</div>
@@ -473,15 +513,19 @@
 					<!-- Project Block -->
 					<div class="project-block">
 						<div class="inner-box">
-							<div class="image-box">
-								<figure class="image"><a href="images/resource/project-3.jpg" class="lightbox-image">
-									<img src="images/resource/project-3.jpg" alt=""></a>
+							<div class="image-box" style="height: 450px;">
+								<figure class="image" style="height: 100%;">
+									<a href="images/resource/project-3.jpg" class="lightbox-image">
+										<img src="images/resource/project-3.jpg" alt="Hakan Şükür" style="height: 100%; object-fit: cover;">
+									</a>
 								</figure>
-								<a href="page-project-details.html" class="icon"><i class="fa fa-long-arrow-alt-right"></i></a>
+								<div class="overlay-content">
+									<p>Dünya Kupası tarihinin en hızlı golünü atan futbolcu (11 saniye). Türkiye Süper Ligi'nin en golcü oyuncusu (249 gol).</p>
+								</div>
 							</div>
 							<div class="content-box">
-								<h4 class="title"><a href="page-project-details.html">Kulüp Tarihleri</a></h4>
-								<span class="cat">TARİH / BAŞARILAR</span>
+								<h4 class="title">Hakan Şükür</h4>
+								<span class="cat">GALATASARAY / MİLLİ TAKIM</span>
 							</div>
 						</div>
 					</div>
@@ -489,151 +533,88 @@
 					<!-- Project Block -->
 					<div class="project-block">
 						<div class="inner-box">
-							<div class="image-box">
-								<figure class="image"><a href="images/resource/project-4.jpg" class="lightbox-image">
-									<img src="images/resource/project-4.jpg" alt=""></a>
+							<div class="image-box" style="height: 450px;">
+								<figure class="image" style="height: 100%;">
+									<a href="images/resource/project-4.jpg" class="lightbox-image">
+										<img src="images/resource/project-4.jpg" alt="Rüştü Reçber" style="height: 100%; object-fit: cover;">
+									</a>
 								</figure>
-								<a href="page-project-details.html" class="icon"><i class="fa fa-long-arrow-alt-right"></i></a>
+								<div class="overlay-content">
+									<p>2002 Dünya Kupası'nda gösterdiği performansla "Dünyanın En İyi 3 Kalecisi" arasında gösterildi. 120 kez milli formayı giydi.</p>
+								</div>
 							</div>
 							<div class="content-box">
-								<h4 class="title"><a href="page-project-details.html">Genç Yetenekler</a></h4>
-								<span class="cat">GELECEK / UMUTLAR</span>
-							</div>
-						</div>
-					</div>
-
-					<!-- Project Block -->
-					<div class="project-block">
-						<div class="inner-box">
-							<div class="image-box">
-								<figure class="image"><a href="images/resource/project-1.jpg" class="lightbox-image">
-									<img src="images/resource/project-1.jpg" alt=""></a>
-								</figure>
-								<a href="page-project-details.html" class="icon"><i class="fa fa-long-arrow-alt-right"></i></a>
-							</div>
-							<div class="content-box">
-								<h4 class="title"><a href="page-project-details.html">Efsane Oyuncular</a></h4>
-								<span class="cat">OYUNCU PROFİLLERİ</span>
-							</div>
-						</div>
-					</div>
-
-					<!-- Project Block -->
-					<div class="project-block">
-						<div class="inner-box">
-							<div class="image-box">
-								<figure class="image"><a href="images/resource/project-2.jpg" class="lightbox-image">
-									<img src="images/resource/project-2.jpg" alt=""></a>
-								</figure>
-								<a href="page-project-details.html" class="icon"><i class="fa fa-long-arrow-alt-right"></i></a>
-							</div>
-							<div class="content-box">
-								<h4 class="title"><a href="page-project-details.html">Tarihi Maçlar</a></h4>
-								<span class="cat">MAÇ ARŞİVİ</span>
-							</div>
-						</div>
-					</div>
-
-					<!-- Project Block -->
-					<div class="project-block">
-						<div class="inner-box">
-							<div class="image-box">
-								<figure class="image"><a href="images/resource/project-3.jpg" class="lightbox-image">
-									<img src="images/resource/project-3.jpg" alt=""></a>
-								</figure>
-								<a href="page-project-details.html" class="icon"><i class="fa fa-long-arrow-alt-right"></i></a>
-							</div>
-							<div class="content-box">
-								<h4 class="title"><a href="page-project-details.html">Kulüp Tarihleri</a></h4>
-								<span class="cat">TARİH / BAŞARILAR</span>
-							</div>
-						</div>
-					</div>
-
-					<!-- Project Block -->
-					<div class="project-block">
-						<div class="inner-box">
-							<div class="image-box">
-								<figure class="image"><a href="images/resource/project-4.jpg" class="lightbox-image">
-									<img src="images/resource/project-4.jpg" alt=""></a>
-								</figure>
-								<a href="page-project-details.html" class="icon"><i class="fa fa-long-arrow-alt-right"></i></a>
-							</div>
-							<div class="content-box">
-								<h4 class="title"><a href="page-project-details.html">Genç Yetenekler</a></h4>
-								<span class="cat">GELECEK / UMUTLAR</span>
-							</div>
-						</div>
-					</div>
-
-					<!-- Project Block -->
-					<div class="project-block">
-						<div class="inner-box">
-							<div class="image-box">
-								<figure class="image"><a href="images/resource/project-1.jpg" class="lightbox-image">
-									<img src="images/resource/project-1.jpg" alt=""></a>
-								</figure>
-								<a href="page-project-details.html" class="icon"><i class="fa fa-long-arrow-alt-right"></i></a>
-							</div>
-							<div class="content-box">
-								<h4 class="title"><a href="page-project-details.html">Efsane Oyuncular</a></h4>
-								<span class="cat">OYUNCU PROFİLLERİ</span>
-							</div>
-						</div>
-					</div>
-
-					<!-- Project Block -->
-					<div class="project-block">
-						<div class="inner-box">
-							<div class="image-box">
-								<figure class="image"><a href="images/resource/project-2.jpg" class="lightbox-image">
-									<img src="images/resource/project-2.jpg" alt=""></a>
-								</figure>
-								<a href="page-project-details.html" class="icon"><i class="fa fa-long-arrow-alt-right"></i></a>
-							</div>
-							<div class="content-box">
-								<h4 class="title"><a href="page-project-details.html">Tarihi Maçlar</a></h4>
-								<span class="cat">MAÇ ARŞİVİ</span>
-							</div>
-						</div>
-					</div>
-
-					<!-- Project Block -->
-					<div class="project-block">
-						<div class="inner-box">
-							<div class="image-box">
-								<figure class="image"><a href="images/resource/project-3.jpg" class="lightbox-image">
-									<img src="images/resource/project-3.jpg" alt=""></a>
-								</figure>
-								<a href="page-project-details.html" class="icon"><i class="fa fa-long-arrow-alt-right"></i></a>
-							</div>
-							<div class="content-box">
-								<h4 class="title"><a href="page-project-details.html">Kulüp Tarihleri</a></h4>
-								<span class="cat">TARİH / BAŞARILAR</span>
-							</div>
-						</div>
-					</div>
-
-					<!-- Project Block -->
-					<div class="project-block">
-						<div class="inner-box">
-							<div class="image-box">
-								<figure class="image"><a href="images/resource/project-4.jpg" class="lightbox-image">
-									<img src="images/resource/project-4.jpg" alt=""></a>
-								</figure>
-								<a href="page-project-details.html" class="icon"><i class="fa fa-long-arrow-alt-right"></i></a>
-							</div>
-							<div class="content-box">
-								<h4 class="title"><a href="page-project-details.html">Genç Yetenekler</a></h4>
-								<span class="cat">GELECEK / UMUTLAR</span>
+								<h4 class="title">Rüştü Reçber</h4>
+								<span class="cat">FENERBAHÇE / MİLLİ TAKIM</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<style>
+				.image-box {
+					position: relative;
+					overflow: hidden;
+					touch-action: none;
+				}
+
+				.overlay-content {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background: rgba(0,0,0,0.8);
+					color: white;
+					padding: 20px;
+					opacity: 0;
+					transition: opacity 0.3s ease;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					text-align: center;
+				}
+
+				.image-box:hover .overlay-content {
+					opacity: 1;
+				}
+
+				.project-carousel {
+					touch-action: pan-y pinch-zoom;
+				}
+
+				.project-carousel .owl-nav {
+					position: absolute;
+					top: 50%;
+					width: 100%;
+					transform: translateY(-50%);
+					display: flex;
+					justify-content: space-between;
+					padding: 0 20px;
+				}
+
+				.project-carousel .owl-nav button {
+					background: rgba(255,255,255,0.8) !important;
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+
+				.project-carousel .owl-nav button span {
+					font-size: 24px;
+					color: #333;
+				}
+			</style>
+
+
 		</div>
 	</section>
 	<!--End Project Section -->
+
 
 	<!-- Fun Fact Section -->
 	<section class="fun-fact-section">
@@ -643,7 +624,7 @@
 					<!-- Counter block-->
 					<div class="counter-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
 						<div class="inner">
-							<i class="icon flaticon-business-060-graph"></i>
+							<i class="icon fas fa-users fa-2x"></i>
 							<div class="count-box"><span class="count-text" data-speed="3000" data-stop="500">0</span></div>
 							<h6 class="counter-title">Oyuncu profili</h6>
 						</div>
@@ -652,7 +633,7 @@
 					<!--Counter block-->
 					<div class="counter-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
 						<div class="inner">
-							<i class="icon flaticon-business-035-helpline"></i>
+							<i class="icon fas fa-futbol fa-2x"></i>
 							<div class="count-box"><span class="count-text" data-speed="3000" data-stop="150">0</span></div>
 							<h6 class="counter-title">Tarihi maç</h6>
 						</div>
@@ -661,7 +642,7 @@
 					<!--Counter block-->
 					<div class="counter-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
 						<div class="inner">
-							<i class="icon flaticon-business-020-hierarchy"></i>
+							<i class="icon fas fa-trophy fa-2x"></i>
 							<div class="count-box"><span class="count-text" data-speed="3000" data-stop="25">0</span></div>
 							<h6 class="counter-title">Kulüp tarihi</h6>
 						</div>
@@ -670,7 +651,7 @@
 					<!--Counter block-->
 					<div class="counter-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
 						<div class="inner">
-							<i class="icon flaticon-business-048-coin"></i>
+							<i class="icon fas fa-smile fa-2x"></i>
 							<div class="count-box"><span class="count-text" data-speed="3000" data-stop="50000">0</span></div>
 							<h6 class="counter-title">Mutlu ziyaretçi</h6>
 						</div>
@@ -680,6 +661,21 @@
 		</div>
 	</section>
 	<!-- End Fun Fact Section -->
+<!-- Call To Action Four -->
+<section class="call-to-action-four">
+	<div class="auto-container">
+		<div class="outer-box">
+			<div class="title-box">
+				<div class="sub-title">Geleceğin yıldızlarını keşfetmeye hazır mısınız?</div>
+				<h3 class="title">Türk Futbolunun En İyi Genç Yeteneklerini Takip Etmek İstiyor musunuz?</h3>
+			</div>
+			<div class="btn-box">
+				<a href="#form" class="theme-btn btn-style-one"><span class="btn-title">Abone Ol</span></a>
+			</div>
+		</div>
+	</div>
+</section>
+<!--End Call To Action Four -->
 
 	<!-- Why Choose Us Two-->
 	<section class="why-choose-us-four">
@@ -688,22 +684,22 @@
 				<div class="content-column col-xl-5 col-lg-7 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="600ms">
 					<div class="inner-column">
 						<div class="sec-title">
-							<span class="sub-title">Neden LumiDexi?</span>
-							<h2>Türk Futbolunun En Kapsamlı Arşivi</h2>
-							<div class="text">120 yıllık Türk futbol tarihini dijital ortamda yaşatıyoruz. Efsanevi oyunculardan büyük kulüplere, tarihi maçlardan geleceğin yıldızlarına kadar her şey burada.</div>
+							<span class="sub-title">Efsane Oyuncu</span>
+							<h2>Metin Oktay: Taçsız Kral</h2>
+							<div class="text">2 Şubat 1936'da İzmir'de doğan Metin Oktay, Türk futbolunun gelmiş geçmiş en büyük golcülerinden biridir. "Taçsız Kral" lakabıyla anılan efsane futbolcu, kariyeri boyunca gösterdiği üstün performans ve centilmenliğiyle Türk futbol tarihine adını altın harflerle yazdırmıştır.</div>
 						</div>
 
 						<div class="content-box pe-lg-5">
 							<div class="whychose-block-four">
-								<i class="icon flaticon-business-018-startup"></i>
-								<h5 class="title">Kapsamlı İçerik Arşivi</h5>
-								<div class="text">500+ oyuncu profili, 150+ tarihi maç ve 25 kulübün detaylı tarihçesi</div>
+								<i class="icon fas fa-trophy fa-2x"></i>
+								<h5 class="title">Başarıları</h5>
+								<div class="text">6 kez Türkiye Ligi gol kralı, 217 gol ile Galatasaray'ın en golcü oyuncusu, 11 kez Milli Takım forması giydi</div>
 							</div>
 
 							<div class="whychose-block-four">
-								<i class="icon flaticon-business-012-startup"></i>
-								<h5 class="title">Sürekli Güncellenen İçerik</h5>
-								<div class="text">Her gün yeni hikayeler ve güncel bilgilerle arşivimizi zenginleştiriyoruz</div>
+								<i class="icon fas fa-star fa-2x"></i>
+								<h5 class="title">Efsane Kariyeri</h5>
+								<div class="text">1955-1969 yılları arasında Galatasaray'da forma giydi, İtalya'da Palermo'da oynadı, 1969'da futbolu bıraktı</div>
 							</div>
 
 						</div>
@@ -714,8 +710,10 @@
 				<div class="image-column col-xl-7 col-lg-5 col-md-12 col-sm-12">
 					<div class="inner-column wow fadeInRight">
 						<figure class="image overlay-anim">
-							<img src="images/background/bg2.jpg" alt="">
-						
+							<img src="images/resource/team-44.jpg" alt="Metin Oktay">
+							<div class="overlay-content" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 20px;">
+								<p>"Futbol sadece gol atmak değil, centilmence oynamak ve fair-play ruhunu yaşatmaktır." - Metin Oktay</p>
+							</div>
 						</figure>
 					</div>
 				</div>
@@ -732,8 +730,8 @@
 		</div>
 		<div class="auto-container">
 			<div class="sec-title text-center">
-				<span class="sub-title">Türk futbolunun efsaneleri</span>
-				<h2>BÜYÜK OYUNCULAR</h2>
+				<span class="sub-title">Milli Takım Efsaneleri</span>
+				<h2>PENALTI KAHRAMANLARI</h2>
 			</div>
 
 			<div class="row">
@@ -741,17 +739,14 @@
 				<div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
 					<div class="inner-box">
 						<div class="image-box">
-							<figure class="image"><a href="page-team-details.html"><img src="images/resource/team-1.jpg" alt=""></a></figure>
+							<figure class="image"><a href="#"><img src="images/resource/project-44.jpg" alt="Rüştü Reçber"></a></figure>
+							<div class="overlay-content" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.8); color: white; padding: 15px;">
+								<p style="color: white;">2008 Avrupa Şampiyonası çeyrek finalinde Hırvatistan'a karşı kritik penaltı kurtarışlarıyla Türkiye'yi yarı finale taşıdı.</p>
+							</div>
 						</div>
 						<div class="info-box">
-							<h5 class="name"><a href="page-team-details.html">Metin Oktay</a></h5>
-							<span class="designation">Galatasaray Efsanesi</span>
-							<div class="social-links">
-								<a href="#"><i class="fab fa-facebook-f"></i></a>
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-pinterest-p"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-							</div>
+							<h5 class="name"><a href="#">Rüştü Reçber</a></h5>
+							<span class="designation">Milli Takım'ın Efsane Kalecisi</span>
 						</div>
 					</div>
 				</div>
@@ -760,17 +755,14 @@
 				<div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
 					<div class="inner-box">
 						<div class="image-box">
-							<figure class="image"><a href="page-team-details.html"><img src="images/resource/team-2.jpg" alt=""></a></figure>
+							<figure class="image"><a href="#"><img src="images/resource/project-55.jpg" alt="Tuncay Şanlı"></a></figure>
+							<div class="overlay-content" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.8); color: white; padding: 15px;">
+								<p style="color: white;">2003 Konfederasyon Kupası'nda Brezilya'ya karşı penaltı atışlarında attığı golle tarihe geçti.</p>
+							</div>
 						</div>
 						<div class="info-box">
-							<h5 class="name"><a href="page-team-details.html">Lefter Küçükandonyadis</a></h5>
-							<span class="designation">Fenerbahçe Efsanesi</span>
-							<div class="social-links">
-								<a href="#"><i class="fab fa-facebook-f"></i></a>
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-pinterest-p"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-							</div>
+							<h5 class="name"><a href="#">Tuncay Şanlı</a></h5>
+							<span class="designation">Milli Takım'ın Gol Makinesi</span>
 						</div>
 					</div>
 				</div>
@@ -779,17 +771,14 @@
 				<div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
 					<div class="inner-box">
 						<div class="image-box">
-							<figure class="image"><a href="page-team-details.html"><img src="images/resource/team-3.jpg" alt=""></a></figure>
+							<figure class="image"><a href="#"><img src="images/resource/project-66.jpg" alt="Semih Şentürk"></a></figure>
+							<div class="overlay-content" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.8); color: white; padding: 15px;">
+								<p style="color: white;">EURO 2008'de Hırvatistan maçında penaltı atışlarında attığı kritik golle takımı yarı finale taşıdı.</p>
+							</div>
 						</div>
 						<div class="info-box">
-							<h5 class="name"><a href="page-team-details.html">Şeref Bey</a></h5>
-							<span class="designation">Beşiktaş Kurucusu</span>
-							<div class="social-links">
-								<a href="#"><i class="fab fa-facebook-f"></i></a>
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-pinterest-p"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-							</div>
+							<h5 class="name"><a href="#">Semih Şentürk</a></h5>
+							<span class="designation">Son Dakika Kahramanı</span>
 						</div>
 					</div>
 				</div>
@@ -798,153 +787,93 @@
 	</section>
 	<!-- End Team Section -->
 
-	<!-- Call To Action Two -->
-	<section class="call-to-action" style="background-image: url(images/background/1.jpg)">
-		<div class="auto-container">
-			<div class="title-box">
-				<div class="icon bounce-y"><img src="images/resource/icon-logo.png" alt=""></div>
-				<h1 class="title">Büyük zaferleri hatırla — <br>önemli maçları izle!</h1>
-				<a href="history.html" class="theme-btn btn-style-one"><span class="btn-title">Maçları İzle</span></a>
-			</div>
-		</div>
-	</section>
-	<!--End Call To Action Two -->
-
-	<!-- Testimonial Section Three -->
-	<section class="testimonial-section-four pb-0">
-		<div class="auto-container">
-			<div class="row">
-				<!-- Title Column -->
-				<div class="title-column col-xl-5 col-lg-6 col-md-12">
-					<div class="inner-column">
-						<div class="sec-title">
-							<span class="sub-title">Ziyaretçi yorumları</span>
-							<h2>Bizim Hakkımızda Neler Söylüyorlar</h2>
-							<div class="text">Türk futbolunun zengin tarihini keşfetmek isteyenler LumiDexi'yi tercih ediyor. Kapsamlı arşivimiz ve detaylı içeriklerimizle futbolseverlerin beğenisini kazanıyoruz.</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Testimonial Column -->
-				<div class="testimonial-column col-xl-7 col-lg-6 col-md-12">
-					<div class="carousel-outer">
-						<div class="testimonial-bg" style="background-image: url(images/resource/testimonial-bg.png)"></div>
-						<div class="testimonial-carousel-four owl-carousel owl-theme">
-
-							<!-- Testimonial Block Four -->
-							<div class="testimonial-block-four">
-								<div class="inner-box">
-									<div class="content-box">
-										<span class="icon icon-quote"></span>
-										<div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-										<div class="text">LumiDexi sayesinde babamın anlattığı eski futbolcuları ve maçları görsel olarak keşfettim. Çok kapsamlı bir arşiv, gerçekten müthiş!</div>
-									</div>
-									<div class="info-box">
-										<figure class="thumb"><img src="images/resource/testi-thumb-3.jpg" alt=""></figure>
-										<h5 class="name">Ahmet Yılmaz</h5>
-										<span class="designation">Futbol Sevdalısı</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Testimonial Block Four -->
-							<div class="testimonial-block-four">
-								<div class="inner-box">
-									<div class="content-box">
-										<span class="icon icon-quote"></span>
-										<div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-										<div class="text">Türk futbolunun tarihi hakkında araştırma yaparken bu siteyi keşfettim. İhtiyacım olan tüm bilgilere buradan ulaşabiliyorum.</div>
-									</div>
-									<div class="info-box">
-										<figure class="thumb"><img src="images/resource/testi-thumb-3.jpg" alt=""></figure>
-										<h5 class="name">Zeynep Kaya</h5>
-										<span class="designation">Spor Gazetecisi</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Testimonial Block Four -->
-							<div class="testimonial-block-four">
-								<div class="inner-box">
-									<div class="content-box">
-										<span class="icon icon-quote"></span>
-										<div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-										<div class="text">Kulübümün tarihini bu kadar detaylı anlatan başka bir kaynak bulamadım. Her Galatasaraylı bu siteyi mutlaka görmeliI.</div>
-									</div>
-									<div class="info-box">
-										<figure class="thumb"><img src="images/resource/testi-thumb-3.jpg" alt=""></figure>
-										<h5 class="name">Mehmet Demir</h5>
-										<span class="designation">Galatasaray Taraftarı</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Testimonial Section Three -->
-
-
 	<!-- FAQ Section -->
 	<section class="faqs-section style-two">
 		<div class="auto-container">
 			<div class="row">
 				<!-- FAQ Column -->
-				<div class="faq-column col-xl-6 col-lg-12 col-md-12 order-4">
+				<div class="faq-column col-xl-7 col-lg-12 col-md-12 order-4">
 					<div class="inner-column">
 						<div class="sec-title">
-							<span class="sub-title">Sıkça sorulan sorular</span>
-							<h2>Merak Edilenler</h2>
+							<span class="sub-title">Tarihi Anlar</span>
+							<h2>Unutulmaz Penaltı Hikayeleri</h2>
 						</div>
 
 						<ul class="accordion-box wow fadeInRight">
 							<!--Block-->
 							<li class="accordion block">
-								<div class="acc-btn">LumiDexi'de hangi içerikler bulunuyor?
-									<div class="icon fa fa-plus"></div>
+								<div class="acc-btn">2002 Dünya Kupası'nda Japonya Maçı Penaltıları
+									<div class="icon fas fa-futbol"></div>
 								</div>
 								<div class="acc-content">
 									<div class="content">
-										<div class="text">Türk futbolunun efsanevi oyuncuları, tarihi maçlar, büyük kulüplerin tarihleri ve 
-											genç yetenekler hakkında kapsamlı bilgiler bulabilirsiniz.</div>
+										<div class="text">Rüştü Reçber'in kurtardığı kritik penaltı, Türkiye'yi çeyrek finale taşıdı. Üç penaltı kurtarışı yapan Rüştü, maçın kahramanı oldu ve dünya basınında geniş yer buldu.</div>
 									</div>
 								</div>
 							</li>
 							<!--Block-->
 							<li class="accordion block active-block">
-								<div class="acc-btn active">İçerikler ne sıklıkla güncelleniyor?
-									<div class="icon fa fa-plus"></div>
+								<div class="acc-btn active">2008 Viyana'da Tarihi Gece
+									<div class="icon fas fa-futbol"></div>
 								</div>
 								<div class="acc-content current">
 									<div class="content">
-										<div class="text">Arşivimizi sürekli güncellemekteyiz. Yeni oyuncu profilleri, maç hikayeleri ve 
-											güncel haberlerle içeriklerimizi her gün zenginleştiriyoruz.</div>
+										<div class="text">Hırvatistan ile EURO 2008 çeyrek final maçında, 120+1'de Semih Şentürk'ün golü ve ardından penaltılarda Rüştü'nün kurtarışları, Türk futbol tarihinin en dramatik galibiyetlerinden birini getirdi.</div>
 									</div>
 								</div>
 							</li>
 							<!--Block-->
 							<li class="accordion block">
-								<div class="acc-btn">Tüm Türk kulüpleri hakkında bilgi var mı?
-									<div class="icon fa fa-plus"></div>
+								<div class="acc-btn">2000 UEFA Kupası Finali
+									<div class="icon fas fa-futbol"></div>
 								</div>
 								<div class="acc-content">
 									<div class="content">
-										<div class="text">Şu anda 25 büyük kulübün detaylı tarihçesi bulunmaktadır. Sürekli olarak 
-											yeni kulüpler eklemeye devam ediyoruz.</div>
+										<div class="text">Galatasaray-Arsenal finalinde Taffarel'in kurtardığı penaltılar ve Gheorghe Popescu'nun attığı son penaltı, Türk futboluna ilk Avrupa kupasını getirdi.</div>
 									</div>
 								</div>
 							</li>
 							<!--Block-->
 							<li class="accordion block">
-								<div class="acc-btn">Nasıl abone olabilirim?
-									<div class="icon fa fa-plus"></div>
+								<div class="acc-btn">1996 Fenerbahçe-Manchester United Maçı
+									<div class="icon fas fa-futbol"></div>
 								</div>
 								<div class="acc-content">
 									<div class="content">
-										<div class="text">Aşağıdaki iletişim formunu doldurarak yeni içeriklerden haberdar olabilir, 
-											özel hikayelere erken erişim sağlayabilirsiniz.</div>
+										<div class="text">Rüştü Reçber'in, Eric Cantona'nın penaltısını kurtarması, Şükrü Saracoğlu Stadı'nda yaşanan en unutulmaz anlardan biri olarak tarihe geçti.</div>
+									</div>
+								</div>
+							</li>
+							<!--Block-->
+							<li class="accordion block">
+								<div class="acc-btn">2003 Konfederasyon Kupası'nda Brezilya Maçı
+									<div class="icon fas fa-futbol"></div>
+								</div>
+								<div class="acc-content">
+									<div class="content">
+										<div class="text">Tuncay Şanlı'nın penaltı atışında Dida'yı avlayarak attığı gol, Türkiye'nin Brezilya'ya karşı kazandığı tarihi galibiyetin en önemli anıydı.</div>
+									</div>
+								</div>
+							</li>
+							<!--Block-->
+							<li class="accordion block">
+								<div class="acc-btn">1987 Süper Kupa Finali
+									<div class="icon fas fa-futbol"></div>
+								</div>
+								<div class="acc-content">
+									<div class="content">
+										<div class="text">Galatasaray-Beşiktaş maçında Tanju Çolak'ın attığı "Panenka" tarzı penaltı, Türk futbolunda bu tekniğin ilk başarılı örneklerinden biri olarak tarihe geçti.</div>
+									</div>
+								</div>
+							</li>
+							<!--Block-->
+							<li class="accordion block">
+								<div class="acc-btn">1992 Avrupa Şampiyonası Elemeleri
+									<div class="icon fas fa-futbol"></div>
+								</div>
+								<div class="acc-content">
+									<div class="content">
+										<div class="text">Feyyaz Uçar'ın İrlanda'ya karşı son dakikada kaçırdığı penaltı, Türkiye'nin EURO 1992'ye katılma şansını kaybetmesine neden olan tarihi anlardan biri oldu.</div>
 									</div>
 								</div>
 							</li>
@@ -953,13 +882,13 @@
 				</div>
 
 				<!-- image Column -->
-				<div class="image-column col-xl-6 col-lg-12 col-md-12 mb-xl-0">
+				<div class="image-column col-xl-5 col-lg-12 col-md-12 mb-xl-0">
 					<div class="inner-column">
-						<figure class="image"><img src="images/resource/faq.jpg" alt=""></figure>
+						<figure class="image"><img src="images/resource/project-444.jpg" alt="Penaltı Anı"></figure>
 						<div class="info-box">
 							<div class="inner">
-								<span class="icon flaticon-business-063-diamond"></span>
-								<h3 class="title">Güvenilir Türk Futbolu<br> Arşiv ve Bilgi Merkezi</h3>
+								<span class="icon fas fa-futbol fa-2x"></span>
+								<h3 class="title">Türk Futbolunun<br>Penaltı Kahramanları</h3>
 							</div>
 						</div>
 					</div>
@@ -969,66 +898,142 @@
 	</section>
 	<!--End FAQ Section -->
 
-	<!-- News Section -->
-	<section class="news-section">
+		<!-- News Section -->
+		<section class="news-section">
+			<div class="auto-container">
+				<div class="sec-title text-center">
+					<span class="sub-title">blogdan</span>
+					<h2>Haberler ve Makaleler</h2>
+				</div>
+				<div class="row">
+					<!-- News Block -->
+					<div class="news-block-three col-lg-4 col-md-6 wow fadeInUp">
+						<div class="inner-box">
+							<div class="image-box">
+								<figure class="image"><a href="#altın-cag"><img src="images/resource/news-11.jpg" alt=""></a></figure>
+								<span class="date">24 Tem, 2025</span>
+							</div>
+							<div class="content-box">
+								<h4 class="title"><a href="#altın-cag">Türk Futbolunun Altın Çağı ve Efsanevi Oyuncular</a></h4>
+								
+							</div>
+						</div>
+					</div>
+					<!-- News Block -->
+					<div class="news-block-three col-lg-4 col-md-6 wow fadeInUp">
+						<div class="inner-box">
+							<div class="image-box">
+								<figure class="image"><a href="#genc-yetenekler"><img src="images/resource/news-22.jpg" alt=""></a></figure>
+								<span class="date">20 Tem, 2025</span>
+							</div>
+							<div class="content-box">
+								<h4 class="title"><a href="#genc-yetenekler">Geleceğin Yıldızları: Türk Futbolunun Genç Yetenekleri</a></h4>
+								
+							</div>
+						</div>
+					</div>
+					<!-- News Block -->
+					<div class="news-block-three col-lg-4 col-md-6 wow fadeInUp">
+						<div class="inner-box">
+							<div class="image-box">
+								<figure class="image"><a href="#derbi-hikayeleri"><img src="images/resource/news-33.jpg" alt=""></a></figure>
+								<span class="date">15 Tem, 2025</span>
+							</div>
+							<div class="content-box">
+								<h4 class="title"><a href="#derbi-hikayeleri">Kulüpler Arası Rekabet: Tarihten Günümüze Derbi Hikayeleri</a></h4>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End News Section -->
+
+	<!-- News Articles Section -->
+	<section class="news-articles-section pt-120 pb-120">
 		<div class="auto-container">
-			<div class="sec-title text-center">
-				<span class="sub-title">blogdan</span>
-				<h2>Haberler ve Makaleler</h2>
-			</div>
-			<div class="row">
-				<!-- News Block -->
-				<div class="news-block-three col-lg-4 col-md-6 wow fadeInUp">
-					<div class="inner-box">
-						<div class="image-box">
-							<figure class="image"><a href="news-details.html"><img src="images/resource/news-1.jpg" alt=""></a></figure>
-							<span class="date">24 Tem, 2025</span>
-						</div>
-						<div class="content-box">
-							<h4 class="title"><a href="news-details.html">Türk Futbolunun Altın Çağı ve Efsanevi Oyuncular</a></h4>
-							<ul class="post-info">
-								<li><i class="fa fa-user"></i> Editör</li>
-								<li class="comments"><i class="fa fa-comments"></i> yorumlar</li>
-							</ul>
-						</div>
-					</div>
+			<!-- Article 1 -->
+			<article id="altın-cag" class="news-details">
+				<div class="news-details__img">
+					<img src="images/resource/news-11.jpg" alt="Türk Futbolunun Altın Çağı">
 				</div>
-				<!-- News Block -->
-				<div class="news-block-three col-lg-4 col-md-6 wow fadeInUp">
-					<div class="inner-box">
-						<div class="image-box">
-							<figure class="image"><a href="news-details.html"><img src="images/resource/news-2.jpg" alt=""></a></figure>
-							<span class="date">20 Tem, 2025</span>
-						</div>
-						<div class="content-box">
-							<h4 class="title"><a href="news-details.html">Geleceğin Yıldızları: Türk Futbolunun Genç Yetenekleri</a></h4>
-							<ul class="post-info">
-								<li><i class="fa fa-user"></i> Editör</li>
-								<li class="comments"><i class="fa fa-comments"></i> yorumlar</li>
-							</ul>
-						</div>
-					</div>
+				<div class="news-details__title">
+					<h2>Türk Futbolunun Altın Çağı ve Efsanevi Oyuncular</h2>
 				</div>
-				<!-- News Block -->
-				<div class="news-block-three col-lg-4 col-md-6 wow fadeInUp">
-					<div class="inner-box">
-						<div class="image-box">
-							<figure class="image"><a href="news-details.html"><img src="images/resource/news-3.jpg" alt=""></a></figure>
-							<span class="date">15 Tem, 2025</span>
-						</div>
-						<div class="content-box">
-							<h4 class="title"><a href="news-details.html">Kulüpler Arası Rekabet: Tarihten Günümüze Derbi Hikayeleri</a></h4>
-							<ul class="post-info">
-								<li><i class="fa fa-user"></i> Editör</li>
-								<li class="comments"><i class="fa fa-comments"></i> yorumlar</li>
-							</ul>
-						</div>
-					</div>
+				<div class="news-details__meta">
+					<span><i class="fa fa-calendar"></i> 24 Temmuz 2025</span>
+					<span><i class="fa fa-user"></i> Editör</span>
 				</div>
-			</div>
+				<div class="news-details__text">
+					<p>1950'lerden 1970'lere kadar uzanan dönem, Türk futbolunun altın çağı olarak kabul edilir. Bu dönemde Metin Oktay, Lefter Küçükandonyadis, Can Bartu gibi efsane oyuncular sahneye çıktı ve Türk futbolunu dünyaya tanıttı.</p>
+					
+					<blockquote>
+						"Futbol sadece bir oyun değil, milletin gururu ve tutkusudur." - Metin Oktay
+					</blockquote>
+					
+					<p>Metin Oktay'ın "Taçsız Kral" unvanı, sadece gol kralı olmasından değil, sahada gösterdiği liderlik ve karakterden geliyordu. 217 gol ile Galatasaray'ın en golcü oyuncusu olan Oktay, aynı zamanda fair-play'in de sembolüydü.</p>
+					
+					<p>Lefter Küçükandonyadis ise "Ordinaryüs" lakabıyla tanınıyor ve teknik yetenekleri ile rakiplerini büyülüyordu. Fenerbahçe formasıyla attığı 423 gol, onun ne kadar büyük bir yetenek olduğunun kanıtıdır.</p>
+				</div>
+			</article>
+
+			<!-- Article 2 -->
+			<article id="genc-yetenekler" class="news-details">
+				<div class="news-details__img">
+					<img src="images/resource/news-22.jpg" alt="Genç Yetenekler">
+				</div>
+				<div class="news-details__title">
+					<h2>Geleceğin Yıldızları: Türk Futbolunun Genç Yetenekleri</h2>
+				</div>
+				<div class="news-details__meta">
+					<span><i class="fa fa-calendar"></i> 20 Temmuz 2025</span>
+					<span><i class="fa fa-user"></i> Editör</span>
+				</div>
+				<div class="news-details__text">
+					<p>Türk futbolu, genç yeteneklerin yetiştirilmesi konusunda son yıllarda büyük atılımlar gerçekleştirdi. Akademiler kuruldu, altyapı sistemleri güçlendirildi ve gençlere daha fazla şans verilmeye başlandı.</p>
+					
+					<p>Arda Güler, Kenan Yıldız, Semih Kılıçsoy gibi genç oyuncular, Türk futbolunun geleceğini parlak gösteriyor. Bu oyuncular sadece yerel ligde değil, Avrupa'nın en büyük kulüplerinde de form gösteriyor.</p>
+					
+					<blockquote>
+						"Gençlere güvenmek, geleceğe yatırım yapmaktır." - Stefan Kuntz
+					</blockquote>
+					
+					<p>U19 ve U21 takımlarımızın uluslararası başarıları, bu neslin ne kadar değerli olduğunu gösteriyor. 2025 yılında EURO 2024'te gösterilen performans, genç oyuncularımızın kalitesinin en büyük kanıtıydı.</p>
+				</div>
+			</article>
+
+			<!-- Article 3 -->
+			<article id="derbi-hikayeleri" class="news-details">
+				<div class="news-details__img">
+					<img src="images/resource/news-33.jpg" alt="Derbi Hikayeleri">
+				</div>
+				<div class="news-details__title">
+					<h2>Kulüpler Arası Rekabet: Tarihten Günümüze Derbi Hikayeleri</h2>
+				</div>
+				<div class="news-details__meta">
+					<span><i class="fa fa-calendar"></i> 15 Temmuz 2025</span>
+					<span><i class="fa fa-user"></i> Editör</span>
+				</div>
+				<div class="news-details__text">
+					<p>Türk futbolunun en heyecan verici yanlarından biri, kulüpler arasındaki tarihi rekabetlerdir. Fenerbahçe-Galatasaray derbisi, dünyada en çok izlenen derbilerden biri olarak kabul edilir.</p>
+					
+					<p>1934'te oynanan ilk resmi derbi maçından bu yana, iki kulüp arasında yaşanan rekabet sadece futbolla sınırlı kalmadı. Taraftarlar, şehir kültürü ve toplumsal değerler de bu rekabetin parçası oldu.</p>
+					
+					<blockquote>
+						"Derbi sadece bir maç değil, bir yaşam biçimidir." - Anonim taraftar
+					</blockquote>
+					
+					<p>Beşiktaş'ın da bu rekabete katılmasıyla "Büyük Üçlü" kavramı doğdu. Her derbi maçı, sadece 90 dakikalık bir mücadele değil, tarihin yeniden yazıldığı anlar olarak hatırlanır.</p>
+					
+					<p>Ali Sami Yen, Şükrü Saracoğlu ve İnönü Stadyumları'nda yaşanan tarihi anlar, bugün hala taraftarlar tarafından gurur ve heyecanla anlatılmaya devam ediyor.</p>
+				</div>
+			</article>
 		</div>
 	</section>
-	<!--End News Section -->
+	<!--End News Articles Section -->
+
+
 
 	<!-- Contact Section -->
 	<section class="contact-four-section">
@@ -1043,87 +1048,77 @@
 								<div class="sec-title">
 									<span class="sub-title">BİZE ULAŞIN</span>
 									<h2>Yeni nesli takip et — haberdar olmak için kaydol!</h2>
-									<div class="text">Türk futbolunun büyük hikayelerinden haberdar olmak istiyorsan hemen abone ol!</div>
+								
 								</div>
 							</div>
 						</div>						
 						<!-- Title Column -->
-						<div class="column col-lg-4">
-							<div class="inner-column">
-								<div class="icon">
-									<a href="#"><i class="fa fa-phone"></i></a>
-									<h5>7/24 Hizmet</h5>
-								</div>
-							</div>
-						</div>
+					
 					</div>
-					<iframe class="map" src="https://maps.google.com/maps?width=100%25&height=600&hl=tr&q=Vi%C5%9Fnezade,%20Sporcu%20Adil%20Sk.%20No:32,%2034357%20Be%C5%9Fikta%C5%9F/%C4%B0stanbul+(LumiDexi)&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
+				
 				</div>
 				<!-- Form Column -->
-				<div class="form-column col-lg-6">
+				<div class="form-column col-lg-6" id="form">
 					<div class="inner-column">
-						<!-- Contact Form -->
-						<div class="contact-form-four wow fadeInLeft">
-							<div class="title-box">
-								<h3 class="text-white text-capitalize">Abone ol</h3>
+							<!-- Contact Form -->
+							<div class="contact-form">
+								<form id="contact_form" name="contact_form" onsubmit="submitForm(event)">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="mb-3">
+												<input name="form_name" class="form-control" type="text" placeholder="Adınız" required>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="mb-3">
+												<input name="form_email" class="form-control required email" type="email" placeholder="E-posta Adresiniz" required>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="mb-3">
+												<select name="form_club" class="form-control" required>
+													<option value="">⚽ Favori Kulübünüz</option>
+													<option value="galatasaray">Galatasaray</option>
+													<option value="fenerbahce">Fenerbahçe</option>
+													<option value="besiktas">Beşiktaş</option>
+													<option value="trabzonspor">Trabzonspor</option>
+													<option value="bursaspor">Bursaspor</option>
+													<option value="diger">Diğer</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								
+									<div class="mb-3">
+										<input name="form_botcheck" class="form-control" type="hidden" value="">
+										<button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Mesaj gönder</span></button>
+									</div>
+								</form>
 							</div>
-							<!--Contact Form-->
-							<form id="contact_form" name="contact_form" class="" action="includes/sendmail.php" method="post">
-								<div class="form-group">
-									<input name="form_name" class="form-control" type="text" placeholder="Adınız">
-								</div>
-								<div class="form-group">
-									<input name="form_email" class="form-control required email" type="email" placeholder="E-posta Adresiniz">
-								</div>
-								<div class="form-group">
-									<select name="form_club" class="form-control">
-										<option value="">Favori Kulübünüz</option>
-										<option value="galatasaray">Galatasaray</option>
-										<option value="fenerbahce">Fenerbahçe</option>
-										<option value="besiktas">Beşiktaş</option>
-										<option value="trabzonspor">Trabzonspor</option>
-										<option value="diger">Diğer</option>
-									</select>
-								</div>
-								<div class="form-group">
-									<textarea name="form_message" class="form-control required" rows="7" placeholder="Mesajınız (İsteğe bağlı)"></textarea>
-								</div>
-								<div class="form-group">
-									<input name="form_botcheck" class="form-control" type="hidden" value="">
-									<button type="submit" class="theme-btn btn-style-two hvr-light" data-loading-text="Lütfen bekleyin..."><span class="btn-title">Abone Ol</span></button>
-								</div>
-							</form>
-						</div>
-						<!--End Contact Form -->
+							<!--End Contact Form -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!--End Contact Section -->
-
-	<!-- Call To Action Two -->
-	<section class="call-to-action-two p-0">
+	<!-- Call To Action Four -->
+	<section class="call-to-action-four">
 		<div class="auto-container">
-			<div class="outer-box wow fadeIn">
-				<!-- Image Box -->
-				<div class="image-box">
-					<figure class="image"><img src="images/resource/image-2.jpg" alt=""></figure>
+			<div class="outer-box">
+				<div class="title-box">
+					<h4>Kulübünü seç — şöhrete giden yolu öğren!</h4>
+					
 				</div>
-				<!-- Content Box -->
-				<div class="content-box">
-					<div class="title-box">
-						<h3 class="title">Kulübünü seç — <br>şöhrete giden yolu öğren!</h3>
-					</div>
-					<div class="btn-box">
-						<a href="clubs.html" class="theme-btn btn-style-two hvr-light"><span class="btn-title">Kulüpleri Gör</span></a>
-					</div>
+				<div class="btn-box">
+					<a href="clubs.html" class="theme-btn btn-style-two hvr-light"><span class="btn-title">Kulüpleri Gör</span></a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--End Call To Action Two -->
-
+	<!--End Call To Action Four -->
 
 	<!-- Main Footer -->
 	<footer class="main-footer">
@@ -1251,6 +1246,53 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/owl.js"></script>
 <script src="js/script.js"></script>
+
+<script>
+(function($) {
+	"use strict";
+	$(document).ready(function() {
+		$(".project-carousel").each(function() {
+			var $carousel = $(this);
+			var options = $carousel.data('options') || {};
+			
+			options.touchDrag = true;
+			options.mouseDrag = true;
+			options.onInitialized = function() {
+				$carousel.find('.owl-nav button').attr('touch-action', 'none');
+			};
+			
+			$carousel.owlCarousel(options);
+		});
+	});
+})(jQuery);
+
+	function submitForm(event) {
+		event.preventDefault();
+		
+		const form = document.getElementById('contact_form');
+		const name = form.querySelector('input[name="form_name"]').value.trim();
+		const email = form.querySelector('input[name="form_email"]').value.trim();
+		const club = form.querySelector('select[name="form_club"]').value;
+	  
+		
+		if (!name || !email || !club) {
+			return false;
+		}
+		
+		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		if (!emailRegex.test(email)) {
+			return false;
+		}
+		
+		form.reset();
+		
+		setTimeout(() => {
+			window.location.href = 'tesekkur.html';
+		}, 100);
+		
+		return false;
+	}
+</script>
 
 <!-- form submit -->
 <script src="js/jquery.validate.min.js"></script>

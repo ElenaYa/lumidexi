@@ -7669,7 +7669,7 @@ Section Title
   background-size: cover;
 }
 .faqs-section.style-two:before {
-  background-image: url(../images/icons/pattern-21.png);
+  background-image: url(../images/icons/pattern-7.png);
   background-repeat: no-repeat;
   background-position: right top;
   content: "";
@@ -8066,7 +8066,7 @@ Section Title
   padding: 5px 40px 40px;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  background-image: url(../images/icons/pattern-1.png);
+  background-image: url(../images/icons/pattern-7.png);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.05);
@@ -11611,6 +11611,7 @@ Section Title
   background-size: 32%;
   background-position: top right;
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 .contact-four-section .sec-title h2 {

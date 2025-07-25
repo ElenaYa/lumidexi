@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+
+Allow: /index.html
+Allow: /history.html
+Allow: /clubs.html
+Allow: /contact.html
+Allow: /future.html
+Allow: /legal.html
+Allow: /privacy.html
+Allow: /terms.html
+Allow: /tesekkur.html
+
+
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /plugins/
+
+Allow: /*.html
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.ico
+
+# Sitemap: https://lumidexi.com/sitemap.xml
+
+Crawl-delay: 1 
