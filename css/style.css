@@ -4168,7 +4168,7 @@ Section Title
   top: 30px;
   bottom: 0;
   max-width: 560px;
-  background-image: url(../images/icons/pattern-4.png);
+ 
   width: 100%;
   content: "";
 }
@@ -4734,7 +4734,7 @@ Section Title
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../images/icons/shape-4.jpg);
+
   background-repeat: no-repeat;
   background-position: center right;
   content: "";
@@ -7151,7 +7151,7 @@ Section Title
   width: 100%;
 }
 .offer-section-two:after {
-  background-image: url(../images/icons/pattern-8.png);
+
   content: "";
   height: 560px;
   left: 0;
@@ -7940,7 +7940,7 @@ Section Title
   bottom: 0;
   width: 223px;
   height: 264px;
-  background-image: url(../images/icons/shape-5.png);
+
   content: "";
 }
 .contact-form.light .select2-container--default .select2-selection--single,
@@ -8164,7 +8164,7 @@ Section Title
   height: 100%;
   width: 1000%;
   background-color: var(--bg-theme-color3);
-  background-image: url(../images/icons/pattern-9.jpg);
+ 
   background-repeat: repeat;
   content: "";
 }
@@ -9000,7 +9000,7 @@ Section Title
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(../images/icons/pattern-13.png);
+
   content: "";
 }
 .testimonial-section-two .testimonial-column {
@@ -9059,7 +9059,7 @@ Section Title
 .testimonial-block-two .info-box .thumb {
   position: relative;
   display: block;
-  height: 67px;
+  
   width: 67px;
   border-radius: 50%;
   padding: 5px;
@@ -9407,7 +9407,6 @@ Section Title
 .testimonial-section-five {
   position: relative;
   padding: 120px 0 90px;
-  background-image: url(../images/icons/pattern-25.jpg);
   background-size: cover;
 }
 .testimonial-section-five .carousel-outer {
@@ -10597,7 +10596,7 @@ Section Title
           animation: bounce-y 30s infinite linear;
   background-repeat: no-repeat;
   background-position: center top;
-  background-image: url(../images/icons/pattern-20.png);
+  
   content: "";
   margin-top: -375px;
   min-height: 200%;
@@ -11202,7 +11201,7 @@ Section Title
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #ffaa18;
   width: 1000%;
   content: "";
 }
@@ -11385,7 +11384,7 @@ Section Title
   min-height: 570px;
   width: 100%;
   background-color: var(--bg-theme-color2);
-  background-image: url(../images/icons/pattern-23.jpg);
+ 
   content: "";
 }
 .contact-section-four .fact-counter {
@@ -11787,7 +11786,7 @@ Section Title
   bottom: 0;
   width: 223px;
   height: 264px;
-  background-image: url(../images/icons/shape-5.png);
+  
   content: "";
 }
 
@@ -13484,7 +13483,7 @@ Section Title
   bottom: 0;
   height: 50px;
   width: 100%;
-  background-image: url(../images/icons/pattern-8.png);
+ 
   background-position: center bottom;
   content: "";
 }
