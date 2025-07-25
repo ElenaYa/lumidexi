@@ -4583,7 +4583,7 @@ Section Title
   position: relative;
 }
 .about-section-three .image-column .inner-column:before {
-  background-color: var(--bg-theme-color2);
+  background-image: url(../images/icons/ball.png);
   border-radius: 50%;
   content: "";
   height: 380px;
@@ -5222,7 +5222,6 @@ Section Title
           align-items: center;
   min-width: 240px;
   padding: 25px 40px;
-  background: #ffffff;
   color: var(--theme-color1);
   -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
@@ -6198,7 +6197,7 @@ Section Title
 
 .services-section-bg {
   position: relative;
-  background-image: url(../images/resource/feature-bg-3.jpg);
+ 
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -9406,7 +9405,7 @@ Section Title
 ***/
 .testimonial-section-five {
   position: relative;
-  padding: 120px 0 90px;
+  padding: 0 0 90px;
   background-size: cover;
 }
 .testimonial-section-five .carousel-outer {
@@ -10077,7 +10076,7 @@ Section Title
   background-position: center;
   background-size: cover;
   background-color: var(--bg-theme-color1);
-  background-image: url(../images/icons/pattern-16.png);
+  
   content: "";
 }
 .industries-section .title-column {
@@ -10115,9 +10114,7 @@ Section Title
 .industries-section.style-two {
   background-color: var(--bg-theme-color1);
 }
-.industries-section.style-two:before {
-  background-image: url(../images/icons/pattern-22.jpg);
-}
+
 
 /***
 
@@ -11375,7 +11372,7 @@ Section Title
 ***/
 .contact-section-four {
   position: relative;
-  padding: 120px 0 70px;
+  
 }
 .contact-section-four:before {
   position: absolute;
@@ -12684,7 +12681,7 @@ Section Title
 }
 .product-details .bxslider .thumb-box li a {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 .product-details .bxslider .thumb-box li a:before {
   position: absolute;
@@ -16726,4 +16723,106 @@ Sidebar
   border-top: 1px solid #e1e1e1;
   padding-top: 20px;
   margin-top: 40px;
+}
+.project-block .image-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-block .overlay-content {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: rgba(0,0,0,0.8) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.project-block .overlay-content p {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.project-block .inner-box:hover .overlay-content {
+  opacity: 1;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-content {
+  background: #fff;
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--theme-color1);
+}
+
+.modal-title {
+  color: var(--theme-color1);
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--theme-color1);
+}
+
+.event-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-list li {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.event-list li:before {
+  content: "⚽";
+  position: absolute;
+  left: 0;
+  color: var(--theme-color1);
+}
+
+.feature-block-two .inner-box {
+  cursor: pointer;
 }
