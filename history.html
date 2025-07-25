@@ -3,7 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="index, follow">
-<title>LumiDexi | Türk Futbolunun Efsaneleri | Hakkımızda</title>
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="LumiDexi | Türk Futbolunun Dijital Evi">
+<meta property="og:description" content="Türk futbolunun efsanevi oyuncuları, tarihi maçlar ve büyük kulüplerin hikayeleri. 120 yıllık futbol tarihini keşfedin.">
+<meta property="og:image" content="https://lumidexi.com/images/logo.png">
+<meta property="og:url" content="https://lumidexi.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LumiDexi">
+<meta property="og:locale" content="tr_TR">
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LumiDexi | Türk Futbolunun Dijital Evi">
+<meta name="twitter:description" content="Türk futbolunun efsanevi oyuncuları, tarihi maçlar ve büyük kulüplerin hikayeleri. 120 yıllık futbol tarihini keşfedin.">
+<meta name="twitter:image" content="https://lumidexi.com/images/logo.png">
+<meta name="twitter:site" content="@lumidexi">
+<meta name="twitter:creator" content="@lumidexi"><title>LumiDexi | Türk Futbolunun Efsaneleri | Hakkımızda</title>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -947,6 +961,7 @@
 						<!-- Contact Form -->
 						<div class="contact-form">
 							<form id="contact_form" name="contact_form" onsubmit="submitForm(event)">
+								<input type="hidden" name="gclid" value="">
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="mb-3">
@@ -1105,30 +1120,31 @@
 <script src="js/script.js"></script>
 <script>
 	function submitForm(event) {
-		event.preventDefault();
-		
-		const form = document.getElementById('contact_form');
-		const name = form.querySelector('input[name="form_name"]').value.trim();
-		const email = form.querySelector('input[name="form_email"]').value.trim();
-		const club = form.querySelector('select[name="form_club"]').value;
-	  
-		
-		if (!name || !email || !club) {
-			return false;
-		}
-		
-		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-		if (!emailRegex.test(email)) {
-			return false;
-		}
-		
-		form.reset();
-		
-		setTimeout(() => {
-			window.location.href = 'tesekkur.html';
-		}, 100);
-		
-		return false;
-	}</script>
+    event.preventDefault();
+    
+    const form = event.target;
+    const formData = new FormData(form);
+    const gclid = formData.get('gclid') || '';
+    
+    // Базовая валидация
+    const email = formData.get('form_email');
+    const name = formData.get('form_name');
+    
+    if (!email || !email.includes('@') || !name || name.trim() === '') {
+        return false;
+    }
+    
+    // В реальном проекте здесь был бы код отправки данных на сервер
+    // включая значение GCLID для отслеживания конверсий
+    
+    // Очистить форму
+    form.reset();
+    
+    // Перенаправить на страницу благодарности
+    window.location.href = 'tesekkur.html' + (gclid ? '?gclid=' + gclid : '');
+    
+    return false;
+}
+</script>
 </body>
 </html>

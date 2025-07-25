@@ -1009,3 +1009,35 @@ var THEMEMASCOT = {};
 	});	
 
 })(window.jQuery);
+
+// GCLID Handler
+function getGclidFromUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('gclid');
+}
+
+function setGclidToForms() {
+    const gclid = getGclidFromUrl();
+    if (gclid) {
+        // Найти все контактные формы
+        const forms = document.querySelectorAll('form[id^="contact_form"]');
+        forms.forEach(form => {
+            // Проверить существует ли уже поле gclid
+            let gclidInput = form.querySelector('input[name="gclid"]');
+            
+            // Если поля нет - создать его
+            if (!gclidInput) {
+                gclidInput = document.createElement('input');
+                gclidInput.type = 'hidden';
+                gclidInput.name = 'gclid';
+                form.appendChild(gclidInput);
+            }
+            
+            // Установить значение GCLID
+            gclidInput.value = gclid;
+        });
+    }
+}
+
+// Запустить обработчик при загрузке страницы
+document.addEventListener('DOMContentLoaded', setGclidToForms);
