@@ -3704,6 +3704,48 @@ li {
   display: none;
 }
 
+.rev-slidebg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tp-caption {
+  position: relative;
+  visibility: hidden;
+  white-space: nowrap;
+  display: block;
+  -webkit-font-smoothing: antialiased !important;
+  z-index: 1;
+}
+
+.rev_slider {
+  position: relative;
+  overflow: visible;
+}
+
+.rev_slider_wrapper {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+
+.fullwidthbanner-container {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.fullwidthbanner-container .fullwidthabanner {
+  width: 100%;
+  position: relative;
+}
+
 .banner-section {
   position: relative;
   overflow: hidden;
