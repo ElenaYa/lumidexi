@@ -12431,7 +12431,7 @@ li {
 .news-block .post-info li {
     position: relative;
     display: inline-block;
-  font-size: 14px;
+    font-size: 14px;
     line-height: 24px;
     color: #555555;
     font-weight: 400;
@@ -12447,7 +12447,7 @@ li {
     position: relative;
     padding: 20px 30px;
     border-top: 1px solid #e1e1e1;
-  display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -15013,7 +15013,7 @@ table.tbl-shopping-cart > tfoot > tr > th {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+          align-items: center;
   padding: 0;
 }
 .error-page__inner .error-page__form-input {
